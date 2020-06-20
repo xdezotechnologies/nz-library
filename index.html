@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Library</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<nav class="left">
+					<a href="#menu"><span>Menu</span></a>
+				</nav>
+				<a href="index.html" class="logo">NZ Library</a>
+				<nav class="right">
+					<a href="login.html" class="button alt">Log in</a>
+				</nav>
+			</header>
+
+		<!-- Menu -->
+			<nav id="menu">
+				<ul class="links">
+					<a href="login.html" class="button alt" style="width:100%;margin-top:30px;">Log in</a>
+				</ul>
+			</nav>
+
+		<!-- Banner -->
+			<section id="banner">
+				<div class="content">
+					<h1>Welcome to NZ Library</h1>
+					<p style="color:#ffffff;">Explore & read millions of books online for free </p>
+					<ul class="actions">
+						<li><a href="#main" class="button scrolly">Get Started</a></li>
+					</ul>
+				</div>
+			</section>
+
+			<!-- Description Text -->
+			<!-- Main -->
+				<section id="main" class="wrapper">
+					<div class="inner">
+						<header class="align-center">
+							<h1>About Treaty of Waitangi</h1>
+						</header>
+
+							<div class="row 200%">
+								<div class="12u">
+										<p><span class="image left"><img src="assets/images/landing-bg.jpg" alt="" /></span>
+											Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis volutpat lorem ipsum dolor sit amet dolor consequat.</p>
+								</div>
+							</div>
+
+					</div>
+				</section>
+
+				<!-- Contact Us Form -->
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<header class="align-center">
+								<h1>Contact Us</h1>
+								<p id="demo"></p>
+							</header>
+
+								<div class="row 200%">
+									<div class="12u">
+
+											<form name="contactform">
+												<div class="row uniform">
+													<div class="4u 12u$(xsmall)">
+														<input type="text" name="fname" id="fname" value="" placeholder="First Name" required/>
+													</div>
+													<div class="4u 12u$(xsmall)">
+														<input type="text" name="lname" id="lname" value="" placeholder="Last Name" required/>
+													</div>
+													<div class="4u 12u$(xsmall)">
+														<input type="email" name="email" id="email" value="" placeholder="Email" required/>
+													</div>
+													<div class="12u$ 12u$(xsmall)">
+														<input type="text" name="subject" id="subject" value="" placeholder="Subject" required/>
+													</div>
+													<!-- Break -->
+													<div class="12u$">
+														<textarea name="message" id="message" placeholder="Enter your message here." rows="6" required></textarea>
+													</div>
+													<!-- Break -->
+													<div class="12u$">
+														<ul class="actions">
+															<li><input type="submit" value="Send Message" name="submit" onclick="display()"/></li>
+															<li><input type="reset" value="Reset" class="alt" /></li>
+														</ul>
+													</div>
+												</div>
+											</form>
+									</div>
+								</div>
+
+						</div>
+					</section>
+				<!-- Contact Us Form -->
+
+
+
+		<!-- Footer -->
+			<footer id="footer">
+					<h4 style="color: #b4deef;">Copyright &copy; 2018, Company Name here. All rights reserved.</h4>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+			<script type="text/javascript">
+				function display()
+				{
+					var fname = document.contactform.fname.value;
+					var lname = document.contactform.lname.value;
+					var email = document.contactform.email.value;
+					var message = document.contactform.message.value;
+
+					if(fname !="" && lname !="" && email !="" && message !="") {
+						alert("Hi, Your message has been sent.")
+					}
+					else {
+						alert("All fields are necessary.");
+					}
+				}
+			</script>
+
+	</body>
+</html>

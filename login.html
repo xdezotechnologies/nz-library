@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Library</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
+
+
+
+
+				<!-- Contact Us Form -->
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<header class="align-center">
+								<h1>Login</h1>
+								<p id="demo"></p>
+							</header>
+
+								<div class="row 200%">
+									<div class="12u">
+
+											<form name="loginform">
+												<div class="row uniform">
+													<div class="12u$ 12u$(xsmall)">
+														<input type="text" name="username" id="username" value="" placeholder="Username" required/>
+													</div>
+													<div class="12u$ 12u$(xsmall)">
+														<input type="password" name="password" id="password" value="" placeholder="Password" required/>
+													</div>
+													<!-- Break -->
+													<div class="12u$">
+														<ul class="actions">
+															<li><input type="button" value="Login" name="submit" onclick="login()"/></li>
+														</ul>
+													</div>
+												</div>
+											</form>
+
+											<hr />
+
+
+									</div>
+								</div>
+
+						</div>
+					</section>
+				<!-- Contact Us Form -->
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+			<script type="text/javascript">
+				function login()
+				{
+					var user = "thapadinesh1328";
+					var pass = "thapadinesh1328";
+					var username = document.loginform.username.value;
+					var password = document.loginform.password.value;
+
+					if(username !="" && password !="") {
+						if(username == user && password == pass) {
+							 window.location.href="admin.html";
+						}
+						else {
+							alert("Credentials does not match our records.")
+						}
+					}
+					else {
+						alert("Please fill the username and password correctly.");
+					}
+				}
+			</script>
+
+	</body>
+</html>
